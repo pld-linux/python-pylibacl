@@ -1,9 +1,9 @@
 
 %include	/usr/lib/rpm/macros.python
 
-%define 	module pylibacl
+%define 	module	pylibacl
 
-Summary:	A python module for manipulating POSIX.1e ACLs
+Summary:	A Python module for manipulating POSIX.1e ACLs
 Summary(pl):	Modu³ jêzyka Python pozwalaj±cy na dostêp do ACL standardu POSIX.1e
 Name:		python-%{module}
 Version:	0.2.1
@@ -19,7 +19,7 @@ BuildRequires:	rpm-pythonprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Python module for accessing Extended Attributes of the files.
+A Python module for accessing Extended Attributes of the files.
 
 %description -l pl
 Modu³ jêzyka Python pozwalaj±cy na dostêp do rozszerzonych atrybutów
