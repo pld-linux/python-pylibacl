@@ -1,19 +1,17 @@
 
-
 %define 	module	pylibacl
 
 Summary:	A Python module for manipulating POSIX.1e ACLs
 Summary(pl):	Modu³ jêzyka Python pozwalaj±cy na dostêp do ACL standardu POSIX.1e
 Name:		python-%{module}
 Version:	0.2.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Libraries/Python
-Source0:	http://dl.sourceforge.net/%{module}/%{module}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/pylibacl/%{module}-%{version}.tar.gz
 # Source0-md5:	a1c3638fae0630dfa715f9143bd71ad5
 URL:		http://pylibacl.sourceforge.net/
 BuildRequires:	acl-devel
-BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
