@@ -6,7 +6,7 @@ Summary:	A Python module for manipulating POSIX.1e ACLs
 Summary(pl):	Modu³ jêzyka Python pozwalaj±cy na dostêp do ACL standardu POSIX.1e
 Name:		python-%{module}
 Version:	0.2.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/%{module}/%{module}-%{version}.tar.gz
