@@ -2,7 +2,7 @@
 %define 	module	pylibacl
 
 Summary:	A Python module for manipulating POSIX.1e ACLs
-Summary(pl):	Modu³ jêzyka Python pozwalaj±cy na dostêp do ACL standardu POSIX.1e
+Summary(pl.UTF-8):   ModuÅ‚ jÄ™zyka Python pozwalajÄ…cy na dostÄ™p do ACL standardu POSIX.1e
 Name:		python-%{module}
 Version:	0.2.1
 Release:	3
@@ -18,9 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A Python module for accessing Extended Attributes of the files.
 
-%description -l pl
-Modu³ jêzyka Python pozwalaj±cy na dostêp do rozszerzonych atrybutów
-plików.
+%description -l pl.UTF-8
+ModuÅ‚ jÄ™zyka Python pozwalajÄ…cy na dostÄ™p do rozszerzonych atrybutÃ³w
+plikÃ³w.
 
 %prep
 %setup -q -n %{module}-%{version}
