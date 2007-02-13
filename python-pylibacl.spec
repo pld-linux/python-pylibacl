@@ -2,7 +2,7 @@
 %define 	module	pylibacl
 
 Summary:	A Python module for manipulating POSIX.1e ACLs
-Summary(pl.UTF-8):   Moduł języka Python pozwalający na dostęp do ACL standardu POSIX.1e
+Summary(pl.UTF-8):	Moduł języka Python pozwalający na dostęp do ACL standardu POSIX.1e
 Name:		python-%{module}
 Version:	0.2.1
 Release:	3
