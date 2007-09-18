@@ -4,14 +4,15 @@
 Summary:	A Python module for manipulating POSIX.1e ACLs
 Summary(pl.UTF-8):	Moduł języka Python pozwalający na dostęp do ACL standardu POSIX.1e
 Name:		python-%{module}
-Version:	0.2.1
-Release:	3
+Version:	0.2.2
+Release:	1
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/pylibacl/%{module}-%{version}.tar.gz
-# Source0-md5:	a1c3638fae0630dfa715f9143bd71ad5
+# Source0-md5:	5628def6afb4b8c37040fc42f7c59eec
 URL:		http://pylibacl.sourceforge.net/
 BuildRequires:	acl-devel
+BuildRequires:	python-devel >= 1:2.5
 %pyrequires_eq	python-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,5 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.html
+%doc *.html BENCHMARK IMPLEMENTATION PLATFORMS README ChangeLog
 %attr(755,root,root) %{py_sitedir}/*.so
+%{py_sitedir}/*.egg-info
