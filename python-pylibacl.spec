@@ -1,3 +1,6 @@
+# TODO:
+# - build in %build
+# - optflags
 
 %define 	module	pylibacl
 
@@ -13,6 +16,7 @@ Source0:	http://dl.sourceforge.net/pylibacl/%{module}-%{version}.tar.gz
 URL:		http://pylibacl.sourceforge.net/
 BuildRequires:	acl-devel
 BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,7 +33,7 @@ plików.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python setup.py install \
+%{__python} setup.py install \
 	--root=$RPM_BUILD_ROOT \
 	--optimize=2
 
