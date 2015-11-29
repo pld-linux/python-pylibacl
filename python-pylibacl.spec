@@ -14,6 +14,7 @@ Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/pylibacl/%{module}-%{version}.tar.gz
 # Source0-md5:	5628def6afb4b8c37040fc42f7c59eec
 URL:		http://pylibacl.sourceforge.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	acl-devel
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
